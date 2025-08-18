@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FDR - Historia</title>
+  <link rel="stylesheet" href="allcss.css" />
+  <link rel="icon" href="imagenes/locopng.ico">
+  <style>
+    .historia-contenido {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .historia-contenido h2 {
+      margin-top: 30px;
+      border-left: 4px solid #0077cc;
+      padding-left: 10px;
+    }
+    .historia-contenido ul, 
+    .historia-contenido ol {
+      margin-left: 25px;
+      margin-bottom: 15px;
+    }
+    .historia-contenido li {
+      margin-bottom: 5px;
+    }
+    .historia-contenido p {
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+    .bloque-resaltado {
+      background: rgba(0,0,0,0.05);
+      padding: 10px 15px;
+      border-radius: 6px;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="barra" onclick="toggleMenu()">☰</div>
+
+  <nav id="sidebar">
+    <a href="inicio.html">Inicio</a>
+    <a href="presentacion.html">Presentación</a>
+    <a href="carreras.html">Carreras</a>
+    <a href="promo.html">Promoción 2025</a>
+    <a href="ubicanos.html">Ubicación</a>
+    <a href="historia.html" class="activo">Historia</a>
+    <a href="contacto.html">Contáctanos</a>
+  </nav>
+
+  <main>
+    <section class="historia-contenido">
+      <h1 class="lema">Historia - CEMG Franklin Delano Roosevelt</h1>
+
+      <h2> Fundación del Instituto</h2>
+      <p>Después de varios intentos por crear un Instituto de Educación Media, un grupo de personas de la comunidad, apoyados por la Logia Masónica y el Club Rotario, se constituyó en Sociedad de Padres de Familia con el objetivo primordial de fundar el instituto.</p>
+     <img src="imagenes/historia/fundacion.jpg" alt="Fundación del Instituto" class="historia-imagen" />
+
+      <div class="bloque-resaltado">
+        <p><strong>Integrantes de la Sociedad de Padres de Familia:</strong></p>
+        <ul>
+          <li>Br. Alberto Carias Quiroz – Presidente</li>
+          <li>Dr. Jacobo Núñez Hércules – Vicepresidente</li>
+          <li>Coronel José Urbizo – Secretario</li>
+          <li>Sr. Rafael Prince – Tesorero</li>
+          <li>Doña Catalina Castillo – Vocal No. 1</li>
+          <li>Don Salomón Castellón – Vocal No. 2</li>
+          <li>Profesora Rosa Estrada – Vocal No. 3</li>
+          <li>Profesor Tobías Valencia – Vocal No. 4</li>
+          <li>Don José Dolores Cubero – Vocal No. 5</li>
+        </ul>
+      </div>
+
+      <p>Esta sociedad presentó ante el Poder Ejecutivo, mediante su apoderado legal, el notario Samuel Da-Costa Gómez, la solicitud para legalizar la apertura del instituto. La personería fue concedida mediante el acuerdo No. 1995 del 26 de abril de 1944.</p>
+
+      <h2> Autorización Oficial</h2>
+      <p>Mediante el Acuerdo No. 1030, fechado el 26 de junio de 1945 en el Palacio Nacional de Tegucigalpa, se autorizó el funcionamiento del Instituto Normal Franklin Delano Roosevelt en Puerto Cortés.</p>
+      
+      <div class="bloque-resaltado">
+        <p><strong>Carreras iniciales autorizadas:</strong></p>
+        <ul>
+          <li>Bachiller en Ciencias y Letras</li>
+          <li>Maestro en Enseñanza Primaria Urbana</li>
+          <li>Perito Mercantil y Contador Público</li>
+        </ul>
+      </div>
+
+      <p>El apoderado especial, Lic. Roberto Ramírez, presentó:</p>
+      <ul>
+        <li>Certificación del nombramiento del Profesor Rubén Alvarado Peña como Director</li>
+        <li>Constancia de su experiencia de 16 años en el Instituto Normal José Trinidad Reyes</li>
+        <li>Certificación de que la Asociación de Padres de Familia contaba con los recursos necesarios para la instalación del instituto</li>
+      </ul>
+
+      <h2> Ubicaciones del Instituto</h2>
+      <p>El instituto funcionó inicialmente en el edificio de la Logia Morazánica, luego en los bajos de la Comandancia de Armas, después en el pabellón de la alegría del Hotel Palmera, y más tarde en “la famosa mulera”, de la cual se recuerdan muchas historias. Finalmente, se trasladó a modernas instalaciones con enfoque técnico-pedagógico.</p>
+      <img src="imagenes/fundacion.jpg" alt="Fundación del Instituto" class="historia-imagen-derecha" />
+
+      <h2> Origen del Nombre</h2>
+      <p>Aunque no se sabe con certeza por qué se eligió el nombre Franklin D. Roosevelt, se mencionan dos versiones:</p>
+      <ol>
+        <li>Un organizador de origen norteamericano ayudó significativamente en la apertura, y se quiso honrar su gesto nombrando el instituto en honor a un compatriota.</li>
+        <li>Admiración por Franklin D. Roosevelt, único presidente de EE. UU. que gobernó cuatro periodos (1933–1945), junto a su esposa luchó por la democracia y la libertad mundial.</li>
+      </ol>
+
+      <h2> Legado</h2>
+      <p>Más allá del nombre, lo importante es el orgullo y amor que sienten los egresados, el personal laboral, los padres de familia y el pueblo en general por el instituto, símbolo de sabiduría en la comunidad.</p>
+    </section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('sidebar');
+      menu.classList.toggle('activo');
+    }
+  </script>
+</body>
+</html>
