@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FDR_Inicio</title>
+  <link rel="stylesheet" href="allcss.css" />
+  <link rel="icon" href="imagenes/locopng.ico">
+</head>
+<body>
+  
+  <div class="barra" onclick="toggleMenu()">☰</div>
+
+
+  <nav id="sidebar">
+    <a href="inicio.html">Inicio</a>
+    <a href="presentacion.html">Presentación</a>
+    <a href="carreras.html">Carreras</a>
+    <a href="promo.html">Promoción 2025</a>
+    <a href="ubicanos.html">Ubicación</a>
+    <a href="historia.html" class="activo">Historia</a>
+    <a href="contacto.html">Contáctanos</a>
+  </nav>
+
+
+  <main>
+    <section class="inicio">
+      <img src="imagenes/locopng.png" alt="Logo del Colegio" class="logo">
+      <h1 class="lema">CEMG Franklin Delano Roosevelt</h1>
+      <p class="intro">Bienvenido a nuestro sitio web. Nuestro colegio se compromete a brindar educación de calidad con principios sólidos.</p>
+      <div class="videoinicio">
+        <iframe src="https://youtu.be/jvmF61Tfxac?si=P4A_tDtwTStS7pkG" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('sidebar');
+      menu.classList.toggle('activo');
+    }
+  </script>
+</body>
+</html>
