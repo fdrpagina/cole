@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FDR - Oferta Academica</title>
+  <link rel="stylesheet" href="allcss.css" />
+   <link rel="icon" href="imagenes/locopng.ico">
+
+</head>
+<body>
+
+ 
+  <div class="barra" onclick="toggleMenu()">☰</div>
+
+  
+ <nav id="sidebar">
+    <a href="inicio.html">Inicio</a>
+    <a href="presentacion.html">Presentación</a>
+    <a href="carreras.html">Carreras</a>
+    <a href="promo.html">Promoción 2025</a>
+    <a href="ubicanos.html">Ubicación</a>
+    <a href="historia.html" class="activo">Historia</a>
+    <a href="contacto.html">Contáctanos</a>
+  </nav>
+<br><br><br>
+
+  <main>
+    <section class="inicio">
+      <h1 class="lema">Nuestras Carreras</h1>
+      <p class="intro">Explora las opciones educativas que ofrecemos para tu futuro profesional:</p>
+
+      <div class="carreras-grid">
+        <a href="carrera1.html" class="carrera-card">
+          <img src="img/informatica.png" alt="Informática">
+          <span>Informática</span>
+        </a>
+
+        <a href="carrera2.html" class="carrera-card">
+          <img src="img/contabilidad.png" alt="Cony f">
+          <span>Robotica</span>
+        </a>
+
+        <a href="carrera3.html" class="carrera-card">
+          <img src="img/salud.png" alt="H y T">
+          <span>Contaduria y Finanzas</span>
+        </a>
+
+        <a href="carrera4.html" class="carrera-card">
+          <img src="img/administracion.png" alt="Administración de E">
+          <span>Administración de Empresas</span>
+        </a>
+
+        <a href="carrera5.html" class="carrera-card">
+          <img src="img/diseño.png" alt="Maritimo">
+          <span>Banca y Finanzas</span>
+        </a>
+
+        <a href="carrera6.html" class="carrera-card">
+          <img src="img/mecatronica.png" alt="C y H">
+          <span>Maritimo Portuario</span>
+        </a>
+
+        <a href="carrera7.html" class="carrera-card">
+          <img src="img/electricidad.png" alt="Robotica">
+          <span>Construccione Metalicas</span>
+        </a>
+
+        <a href="carrera8.html" class="carrera-card">
+          <img src="img/turismo.png" alt="hoteleria y Turismo">
+          <span>Ciencias y Humanidades</span>
+        </a>
+
+         <a href="carrera9.html" class="carrera-card">
+          <img src="img/turismo.png" alt="hoteleria y Turismo">
+          <span>Hoteleria y Turismo</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('sidebar').classList.toggle('activo');
+    }
+  </script>
+</body>
+</html>
