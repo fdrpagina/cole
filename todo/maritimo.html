@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrera Marítimo Portuario</title>
+  <link rel="icon" href="imagenes/locopng.ico">
+  <link rel="stylesheet" href="allcss.css" />
+  <style>
+    .imagen-intercalada {
+      width: 40%;
+      max-width: 250px;
+      float: right;
+      margin: 0 0 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+    @media (max-width: 700px) {
+      .imagen-intercalada {
+        float: none;
+        width: 100%;
+        margin: 15px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="barra" onclick="toggleMenu()">☰</div>
+
+  <nav id="sidebar">
+    <a href="../index.html">Inicio</a>
+    <a href="presentacion.html">Presentación</a>
+    <a href="carreras.html" class="activo">Carreras</a>
+    <a href="promo.html">Promoción 2025</a>
+    <a href="ubicanos.html">Ubicación</a>
+    <a href="historia.html">Historia</a>
+    <a href="contacto.html">Contáctanos</a>
+  </nav>
+
+  <main>
+    <h1 class="lema">Carrera Marítimo Portuario</h1>
+
+    <p class="intro">
+      <img src="img/maritimo1.jpg" alt="Puerto Cortés" class="imagen-intercalada">
+      La carrera Marítimo Portuario forma profesionales capacitados para gestionar operaciones portuarias, logística marítima, transporte de carga y comercio internacional. Su propósito es preparar a los estudiantes para optimizar procesos, garantizar seguridad en la operación portuaria y mejorar la eficiencia de la cadena logística, aprovechando la ubicación estratégica de Puerto Cortés como el principal puerto de Honduras.
+    </p>
+
+    <p class="intro">
+      Durante la jornada extendida, los estudiantes adquieren conocimientos en navegación, gestión de embarcaciones, logística y transporte marítimo, comercio internacional, seguridad portuaria, documentación aduanera y normativas marítimas locales e internacionales. Las prácticas profesionales en puertos y empresas del sector permiten aplicar los conocimientos en entornos reales, fortaleciendo habilidades técnicas y operativas.
+    </p>
+
+    <p class="intro">
+      <img src="img/maritimo2.jpg" alt="Operaciones portuarias" class="imagen-intercalada">
+      Además de la formación técnica, la carrera desarrolla competencias en liderazgo, gestión de equipos, comunicación efectiva, toma de decisiones estratégicas y resolución de problemas en situaciones reales de alto flujo de operaciones. Los estudiantes aprenden a coordinar embarques, supervisar carga y descarga, y optimizar procesos logísticos de manera segura y eficiente.
+    </p>
+
+    <p class="intro">
+      La ubicación de Puerto Cortés ofrece una ventaja competitiva única, ya que las oportunidades laborales son variadas y en constante crecimiento: puertos, navieras, empresas de logística, transporte y comercio internacional demandan profesionales calificados, lo que garantiza una rápida inserción laboral y perspectivas de desarrollo profesional.
+    </p>
+
+    <section class="pagina">
+      <h2 style="color:#00aaff; text-align:center; margin-bottom:20px;">Salidas Profesionales</h2>
+      <div class="carreras-grid">
+        <div class="carrera-card">
+          <span>Gestor portuario</span>
+          <p>Coordina operaciones de carga, descarga y transporte en puertos nacionales e internacionales.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Supervisor de logística</span>
+          <p>Planifica y controla la cadena logística, optimizando tiempos y recursos.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Especialista en comercio internacional</span>
+          <p>Gestiona trámites aduaneros, exportaciones e importaciones de manera eficiente.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Coordinador de transporte marítimo</span>
+          <p>Supervisa rutas, embarcaciones y operaciones de carga marítima segura.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Emprendedor logístico</span>
+          <p>Inicia negocios propios relacionados con transporte, almacenamiento o comercio marítimo.</p>
+        </div>
+      </div>
+    </section>
+
+    <div style="text-align:center; margin-top: 30px;">
+      <a href="carreras.html" class="btn-recorrido">← Volver a Carreras</a>
+    </div>
+  </main>
+
+<script>
+  function toggleMenu() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('activo');
+  }
+</script>
+
+</body>
+</html>
