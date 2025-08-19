@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrera Hotelería y Turismo</title>
+  <link rel="icon" href="imagenes/locopng.ico">
+  <link rel="stylesheet" href="allcss.css" />
+  <style>
+    .imagen-intercalada {
+      width: 40%;
+      max-width: 250px;
+      float: right;
+      margin: 0 0 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+    @media (max-width: 700px) {
+      .imagen-intercalada {
+        float: none;
+        width: 100%;
+        margin: 15px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="barra" onclick="toggleMenu()">☰</div>
+
+  <nav id="sidebar">
+    <a href="../index.html">Inicio</a>
+    <a href="presentacion.html">Presentación</a>
+    <a href="carreras.html" class="activo">Carreras</a>
+    <a href="promo.html">Promoción 2025</a>
+    <a href="ubicanos.html">Ubicación</a>
+    <a href="historia.html">Historia</a>
+    <a href="contacto.html">Contáctanos</a>
+  </nav>
+
+  <main>
+    <h1 class="lema">Carrera Hotelería y Turismo</h1>
+
+    <p class="intro">
+      <img src="img/hoteleria1.jpg" alt="Laboratorio de alimentos" class="imagen-intercalada">
+      La carrera de Hotelería y Turismo ofrece una formación integral para desarrollar competencias en el sector de servicios, gastronomía y atención al cliente. Su propósito es preparar a los estudiantes para planificar, coordinar y ejecutar servicios turísticos y de hotelería de calidad, integrando creatividad, profesionalismo y eficiencia en cada actividad.
+    </p>
+
+    <p class="intro">
+      Los estudiantes realizan prácticas en el laboratorio de alimentos, aprendiendo técnicas culinarias profesionales, preparación de platillos internacionales y locales, control de higiene y seguridad alimentaria. Además, se entrenan como bartenders y meseros, participando en la atención de eventos importantes organizados por la institución y otros clientes, fortaleciendo sus habilidades de servicio y comunicación.
+    </p>
+
+    <p class="intro">
+      <img src="img/hoteleria2.jpg" alt="Atención en eventos" class="imagen-intercalada">
+      Durante la formación, se abordan temas como gestión hotelera, turismo sostenible, planificación de eventos, atención al cliente, protocolo y administración de recursos. Los alumnos desarrollan competencias técnicas y blandas, como liderazgo, trabajo en equipo, creatividad y resolución de problemas, esenciales para destacar en el sector turístico y de servicios.
+    </p>
+
+    <p class="intro">
+      La carrera también fomenta la participación en ferias gastronómicas, eventos culturales y proyectos turísticos locales, permitiendo que los estudiantes apliquen sus conocimientos en situaciones reales. Esto garantiza que los egresados estén preparados para enfrentar desafíos profesionales y ofrecer experiencias de calidad en hoteles, restaurantes, bares, agencias de viajes y emprendimientos propios.
+    </p>
+
+    <section class="pagina">
+      <h2 style="color:#00aaff; text-align:center; margin-bottom:20px;">Salidas Profesionales</h2>
+      <div class="carreras-grid">
+        <div class="carrera-card">
+          <span>Chef profesional</span>
+          <p>Diseña y prepara menús, controlando la calidad y presentación de los alimentos.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Bartender</span>
+          <p>Prepara bebidas y cócteles, brindando un servicio profesional en eventos y bares.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Mesero/a</span>
+          <p>Atiende a los clientes con eficiencia, cordialidad y conocimiento de protocolo.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Coordinador de eventos</span>
+          <p>Planifica y organiza eventos, supervisando logística, personal y atención al cliente.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Emprendedor turístico</span>
+          <p>Inicia negocios propios en gastronomía, hotelería o servicios turísticos.</p>
+        </div>
+      </div>
+    </section>
+
+    <div style="text-align:center; margin-top: 30px;">
+      <a href="carreras.html" class="btn-recorrido">← Volver a Carreras</a>
+    </div>
+  </main>
+
+<script>
+  function toggleMenu() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('activo');
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrera de Administración de Empresas</title>
+  <link rel="icon" href="imagenes/locopng.ico">
+  <link rel="stylesheet" href="allcss.css" />
+  <style>
+    /* Ajuste de tamaño para imágenes intercaladas */
+    .imagen-intercalada {
+      width: 40%;
+      max-width: 250px; /* imágenes no muy grandes */
+      float: right;
+      margin: 0 0 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    @media (max-width: 700px) {
+      .imagen-intercalada {
+        float: none;
+        width: 100%;
+        margin: 15px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="barra" onclick="toggleMenu()">☰</div>
+
+  <nav id="sidebar">
+    <a href="../index.html">Inicio</a>
+    <a href="presentacion.html">Presentación</a>
+    <a href="carreras.html" class="activo">Carreras</a>
+    <a href="promo.html">Promoción 2025</a>
+    <a href="ubicanos.html">Ubicación</a>
+    <a href="historia.html">Historia</a>
+    <a href="contacto.html">Contáctanos</a>
+  </nav>
+
+  <main>
+    <h1 class="lema">Carrera de Administración de Empresas</h1>
+
+    <p class="intro">
+      <img src="img/admin1.jpg" alt="Administración de Empresas" class="imagen-intercalada">
+      La carrera de Administración de Empresas forma profesionales capaces de planificar, organizar, dirigir y controlar recursos humanos, financieros y materiales de manera eficiente para alcanzar los objetivos estratégicos de cualquier organización. 
+      Los estudiantes adquieren conocimientos en liderazgo, gestión de proyectos, marketing, finanzas y recursos humanos, combinando teoría con práctica en entornos simulados y reales.
+    </p>
+
+    <p class="intro">
+      Los programas incluyen el estudio de estrategias de negocio, desarrollo de habilidades directivas, análisis de mercados y optimización de procesos. Los alumnos aprenden a tomar decisiones fundamentadas, resolver problemas complejos y mejorar la productividad empresarial utilizando herramientas modernas de gestión y tecnología aplicada.
+    </p>
+
+    <p class="intro">
+      <img src="img/admin2.jpg" alt="Trabajo en equipo" class="imagen-intercalada">
+      El enfoque práctico permite a los estudiantes participar en proyectos reales, consultorías internas y simulaciones empresariales, fomentando el trabajo en equipo, la comunicación efectiva y el pensamiento crítico. Además, se promueve la innovación, la ética profesional y la responsabilidad social corporativa.
+    </p>
+
+    <p class="intro">
+      <img src="img/admin3.jpg" alt="Estudio financiero" class="imagen-intercalada">
+      Al finalizar la carrera, los egresados están preparados para desempeñarse en empresas privadas y públicas, organizaciones sin fines de lucro o incluso emprender su propio negocio. La formación les permite asumir roles de liderazgo, coordinación de equipos, planificación estratégica y análisis financiero, contribuyendo al éxito y crecimiento de la organización.
+    </p>
+
+    <section class="pagina">
+  <h2 style="color:#00aaff; text-align:center; margin-bottom:20px;">Salidas Profesionales</h2>
+  <div class="carreras-grid">
+    <div class="carrera-card">
+      <span>Gerente de proyectos</span>
+      <p>Dirige equipos y coordina departamentos en empresas privadas y públicas.</p>
+    </div>
+    <div class="carrera-card">
+      <span>Analista financiero</span>
+      <p>Evalúa operaciones y finanzas para optimizar recursos y maximizar beneficios.</p>
+    </div>
+    <div class="carrera-card">
+      <span>Consultor empresarial</span>
+      <p>Asesora a organizaciones en estrategias, procesos y crecimiento sostenible.</p>
+    </div>
+    <div class="carrera-card">
+      <span>Emprendedor</span>
+      <p>Inicia y gestiona negocios propios aplicando conocimientos adquiridos.</p>
+    </div>
+    <div class="carrera-card">
+      <span>Coordinador de áreas</span>
+      <p>Gestiona recursos humanos, logística o marketing con eficiencia y liderazgo.</p>
+    </div>
+  </div>
+</section>
+
+    <div style="text-align:center; margin-top: 30px;">
+      <a href="carreras.html" class="btn-recorrido">← Volver a Carreras</a>
+    </div>
+  </main>
+
+<script>
+  function toggleMenu() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('activo');
+  }
+</script>
+
+</body>
+</html>
