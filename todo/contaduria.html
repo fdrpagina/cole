@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrera de Contaduría y Finanzas</title>
+  <link rel="icon" href="imagenes/locopng.ico">
+  <link rel="stylesheet" href="allcss.css" />
+  <style>
+    .imagen-intercalada {
+      width: 40%;
+      max-width: 250px;
+      float: right;
+      margin: 0 0 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+    @media (max-width: 700px) {
+      .imagen-intercalada {
+        float: none;
+        width: 100%;
+        margin: 15px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="barra" onclick="toggleMenu()">☰</div>
+
+  <nav id="sidebar">
+    <a href="../index.html">Inicio</a>
+    <a href="presentacion.html">Presentación</a>
+    <a href="carreras.html" class="activo">Carreras</a>
+    <a href="promo.html">Promoción 2025</a>
+    <a href="ubicanos.html">Ubicación</a>
+    <a href="historia.html">Historia</a>
+    <a href="contacto.html">Contáctanos</a>
+  </nav>
+
+  <main>
+    <h1 class="lema">Carrera de Contaduría y Finanzas</h1>
+
+    <p class="intro">
+      La carrera de Contaduría y Finanzas ofrece una formación integral en la gestión contable y financiera de empresas y organizaciones. Su propósito principal es formar profesionales capaces de administrar los recursos económicos de manera eficiente, cumplir con normativas fiscales y brindar información confiable para la toma de decisiones estratégicas, asegurando la estabilidad financiera de las instituciones.
+    </p>
+
+    <p class="intro">
+      En esta carrera matutina, los estudiantes desarrollan conocimientos teóricos y prácticos en contabilidad general y avanzada, auditoría interna, control de inventarios, conciliaciones bancarias, análisis financiero y presupuestario. Se estudian también principios de tributación, legislación fiscal y herramientas digitales contables, permitiendo a los alumnos gestionar procesos contables con precisión y transparencia.
+    </p>
+
+    <p class="intro">
+      Durante la formación, se enfatiza el análisis financiero y la toma de decisiones estratégicas. Los estudiantes aprenden a evaluar inversiones, calcular rentabilidad, gestionar flujos de caja y analizar riesgos financieros, aplicando indicadores y metodologías que permiten optimizar los recursos de manera sostenible. La combinación de teoría, casos prácticos y simulaciones prepara a los alumnos para enfrentar situaciones reales del entorno empresarial.
+    </p>
+
+    <p class="intro">
+      La carrera también desarrolla habilidades blandas fundamentales, como pensamiento crítico, ética profesional, comunicación efectiva y liderazgo. Los estudiantes aprenden a interpretar información financiera, elaborar informes contables claros y brindar asesoría confiable a empresas e individuos, fortaleciendo su perfil profesional y facilitando su inserción en el mercado laboral.
+    </p>
+
+    <p class="intro">
+      Además, se promueve la participación en talleres, seminarios y prácticas profesionales en empresas y despachos contables, permitiendo que los egresados adquieran experiencia real antes de incorporarse al mundo laboral. Esta preparación integral asegura que los graduados estén capacitados para desempeñarse como contadores, auditores, asesores financieros o emprendedores en el sector económico.
+    </p>
+
+    <section class="pagina">
+      <h2 style="color:#00aaff; text-align:center; margin-bottom:20px;">Salidas Profesionales</h2>
+      <div class="carreras-grid">
+        <div class="carrera-card">
+          <span>Contador general</span>
+          <p>Registra, clasifica y analiza las operaciones contables de empresas e instituciones.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Auditor interno</span>
+          <p>Supervisa y controla los procesos financieros para garantizar cumplimiento y transparencia.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Asesor financiero</span>
+          <p>Brinda consultoría sobre inversiones, presupuestos y planificación económica.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Analista contable</span>
+          <p>Interpreta información financiera para apoyar la toma de decisiones estratégicas.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Emprendedor en finanzas</span>
+          <p>Inicia negocios propios relacionados con contabilidad, asesoría o gestión financiera.</p>
+        </div>
+      </div>
+    </section>
+
+    <div style="text-align:center; margin-top: 30px;">
+      <a href="carreras.html" class="btn-recorrido">← Volver a Carreras</a>
+    </div>
+  </main>
+
+<script>
+  function toggleMenu() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('activo');
+  }
+</script>
+
+</body>
+</html>
