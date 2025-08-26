@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrera de Banca y Finanzas</title>
+  <link rel="icon" href="imagenes/locopng.ico">
+  <link rel="stylesheet" href="allcss.css" />
+  <style>
+    .imagen-intercalada {
+      width: 40%;
+      max-width: 250px;
+      float: right;
+      margin: 0 0 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+    @media (max-width: 700px) {
+      .imagen-intercalada {
+        float: none;
+        width: 100%;
+        margin: 15px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="barra" onclick="toggleMenu()">☰</div>
+
+  <nav id="sidebar">
+    <a href="../index.html">Inicio</a>
+    <a href="presentacion.html">Presentación</a>
+    <a href="carreras.html" class="activo">Carreras</a>
+    <a href="promo.html">Promoción 2025</a>
+    <a href="ubicanos.html">Ubicación</a>
+    <a href="historia.html">Historia</a>
+    <a href="contacto.html">Contáctanos</a>
+  </nav>
+
+  <main>
+    <h1 class="lema">Carrera de Banca y Finanzas</h1>
+
+    <p class="intro">
+      La carrera de Banca y Finanzas forma profesionales altamente capacitados para planificar, organizar y supervisar operaciones financieras en bancos, instituciones financieras, empresas privadas y organismos del sector público. Su propósito principal es garantizar la correcta gestión de los recursos económicos, el análisis de riesgos y la optimización de inversiones, contribuyendo al desarrollo financiero sostenible de personas y organizaciones.
+    </p>
+
+    <p class="intro">
+      Durante la jornada extendida, los estudiantes adquieren conocimientos sólidos en áreas clave como análisis de estados financieros, contabilidad bancaria, gestión de créditos y préstamos, evaluación de riesgos, inversiones, seguros, mercados de capitales y normativa financiera vigente. Se combinan clases teóricas, talleres prácticos, simulaciones financieras y proyectos grupales, lo que permite profundizar en la comprensión de los procesos y herramientas utilizadas en el sector.
+    </p>
+
+    <p class="intro">
+      Además de los conocimientos técnicos, la formación incluye el desarrollo de competencias blandas esenciales: pensamiento crítico, liderazgo, toma de decisiones estratégicas, ética profesional y habilidades de comunicación. Los estudiantes aprenden a analizar problemas financieros complejos y proponer soluciones efectivas que generen valor en entornos económicos dinámicos y competitivos.
+    </p>
+
+    <p class="intro">
+      La carrera también enfatiza la aplicación práctica mediante simulaciones de operaciones bancarias, análisis de casos reales, participación en proyectos financieros y prácticas profesionales en instituciones del sector. Esto permite que los egresados estén preparados para enfrentar desafíos reales desde el primer día de su vida profesional.
+    </p>
+
+    <section class="pagina">
+      <h2 style="color:#00aaff; text-align:center; margin-bottom:20px;">Salidas Profesionales</h2>
+      <div class="carreras-grid">
+        <div class="carrera-card">
+          <span>Analista financiero</span>
+          <p>Evalúa operaciones financieras y prepara informes para optimizar recursos.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Asesor bancario</span>
+          <p>Brinda atención y asesoría a clientes sobre créditos, inversiones y productos financieros.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Gestor de riesgos</span>
+          <p>Identifica y controla riesgos financieros en empresas e instituciones bancarias.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Consultor financiero</span>
+          <p>Asesora a empresas y particulares en planificación, inversión y optimización de recursos.</p>
+        </div>
+        <div class="carrera-card">
+          <span>Emprendedor en finanzas</span>
+          <p>Inicia negocios propios relacionados con servicios financieros o asesorías.</p>
+        </div>
+      </div>
+    </section>
+
+    <div style="text-align:center; margin-top: 30px;">
+      <a href="carreras.html" class="btn-recorrido">← Volver a Carreras</a>
+    </div>
+  </main>
+
+<script>
+  function toggleMenu() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('activo');
+  }
+</script>
+
+</body>
+</html>
